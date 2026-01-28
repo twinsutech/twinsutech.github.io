@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWINSU Tech. | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --success: #01875f;
+            --text-main: #202124;
+            --text-sub: #5f6368;
+            --bg-gray: #f8f9fa;
+        }
+
+        /* 스크롤바 숨기기 */
+        body { -ms-overflow-style: none; scrollbar-width: none; overflow-y: scroll; }
+        body::-webkit-scrollbar { display: none; }
+
+        body { 
+            margin: 0; 
+            font-family: 'Google Sans', 'Noto Sans KR', sans-serif; 
+            background-color: #ffffff; 
+            color: var(--text-main); 
+            line-height: 1.4;
+        }
+        
+        /* 상단 섹션 - 더 컴팩트하게 조정 */
+        header { 
+            padding: 80px 24px 40px; 
+            text-align: center; 
+            background: #ffffff;
+        }
+        .brand { 
+            font-size: 4.5rem; 
+            font-weight: 700; 
+            color: var(--primary); 
+            margin: 0; 
+            letter-spacing: -2.5px; 
+        }
+        .tagline { 
+            font-size: 1.4rem; 
+            color: var(--text-sub); 
+            margin-top: 10px; 
+            font-weight: 300;
+        }
+
+        /* 전체 가로폭 최대치 (와이드) */
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 20px 24px; 
+        }
+        
+        .section-header { margin-bottom: 30px; text-align: center; }
+        .section-title { font-size: 2rem; font-weight: 500; position: relative; display: inline-block; padding-bottom: 10px; }
+        .section-title::after { 
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); 
+            width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
+        }
+
+        /* 제품 그리드 - 한 줄에 무조건 3개 고정 (1280px 이상에서) */
+        .app-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 24px; 
+            margin-bottom: 60px; 
+        }
+
+        .app-card { 
+            background: #fff; border-radius: 20px; padding: 25px; text-decoration: none; 
+            border: 1px solid #e8eaed; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .app-card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+
+        .icon-box { 
+            width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center; 
+            justify-content: center; margin-right: 18px; flex-shrink: 0; 
+        }
+        .icon-box i { font-size: 36px; color: #fff; }
+        
+        .bg-note { background: linear-gradient(135deg, #689f38, #8bc34a); }
+        .bg-insta { background: linear-gradient(135deg, #039be5, #4fc3f7); }
+        .bg-money { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
+        .bg-eats { background: linear-gradient(135deg, #e53935, #ef5350); }
+        .bg-pass { background: linear-gradient(135deg, #546e7a, #78909c); }
+        .bg-meme { background: linear-gradient(135deg, #8e24aa, #ba68c8); }
+
+        .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
+        .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
+
+        /* 하단 Support 섹션 - 와이드 & 컴팩트 */
+        .support-container { padding: 40px 24px 60px; background-color: var(--bg-gray); }
+        .support-box { 
+            max-width: 1350px; margin: 0 auto; padding: 40px; border-radius: 28px; 
+            border: 1px solid #e8eaed; background-color: #ffffff; text-align: center;
+        }
+        .support-text { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 25px; }
+        
+        .contact-btn {
+            display: inline-flex; align-items: center; padding: 12px 36px; border-radius: 12px;
+            background-color: var(--primary); color: #ffffff;
+            text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: 0.3s;
+        }
+        .contact-btn:hover { background-color: #1557b0; }
+
+        /* Footer */
+        footer { padding: 60px 24px; background-color: #1a1b1e; color: #9aa0a6; text-align: center; }
+        .f-links { margin-bottom: 25px; }
+        .f-links a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 500; }
+        .f-links a:hover { color: var(--primary); }
+        .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
+
+        /* 태블릿/모바일 대응 */
+        @media (max-width: 1024px) {
+            .app-grid { grid-template-columns: repeat(2, 1fr); }
+            .brand { font-size: 3.5rem; }
+        }
+        @media (max-width: 640px) {
+            .app-grid { grid-template-columns: 1fr; }
+            .brand { font-size: 2.8rem; }
+            .f-links a { display: block; margin: 15px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="brand">TWINSU Tech.</h1>
+    <p class="tagline">Simplifying Digital Life through Innovation</p>
+</header>
+
+<div class="container">
+    <div class="section-header">
+        <h2 class="section-title">Our Solutions</h2>
+    </div>
+    
+    <div class="app-grid">
+        <a href="https://play.google.com/store/apps/details?id=com.obj.capturenote" class="app-card" target="_blank">
+            <div class="icon-box bg-note"><i class="material-icons-round">description</i></div>
+            <div class="app-info"><h3>NoteMan</h3><p>Smart Memo System</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.instanote" class="app-card" target="_blank">
+            <div class="icon-box bg-insta"><i class="material-icons-round">edit_note</i></div>
+            <div class="app-info"><h3>InstaNote</h3><p>Secure Digital Pad</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.accountbook" class="app-card" target="_blank">
+            <div class="icon-box bg-money"><i class="material-icons-round">payments</i></div>
+            <div class="app-info"><h3>MoneyTracker</h3><p>Finance Manager</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.neareats" class="app-card" target="_blank">
+            <div class="icon-box bg-eats"><i class="material-icons-round">restaurant</i></div>
+            <div class="app-info"><h3>NearEats</h3><p>Gourmet Finder</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.passwordbox" class="app-card" target="_blank">
+            <div class="icon-box bg-pass"><i class="material-icons-round">lock</i></div>
+            <div class="app-info"><h3>Password BOX</h3><p>Encrypted Vault</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.memegenerator" class="app-card" target="_blank">
+            <div class="icon-box bg-meme"><i class="material-icons-round">auto_awesome</i></div>
+            <div class="app-info"><h3>AIMEME</h3><p>AI Creative Tool</p></div>
+        </a>
+    </div>
+</div>
+
+<div class="support-container">
+    <div class="support-box">
+        <h2 class="section-title" style="font-size: 1.8rem;">Support & Trust</h2>
+        <p class="support-text">
+            We prioritize user security and seamless experiences. <br>
+            Building high-quality tools that empower your productivity.
+        </p>
+        <div class="support-action">
+            <a href="mailto:yskim10007@gmail.com" class="contact-btn">
+                <i class="material-icons-round" style="margin-right: 10px;">mail</i> Contact Official Support
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="f-links">
+        <a href="https://play.google.com/store/apps/developer?id=TWINSU+Tech." target="_blank">Google Play Store</a>
+        <a href="https://sites.google.com/view/twinsutech-privacy-policy" target="_blank">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+        © 2026 TWINSU Tech. All Rights Reserved. <br>
+        Verified Developer Website for Google Play Store.
+    </div>
+</footer>
+
+</body>
+</html>
