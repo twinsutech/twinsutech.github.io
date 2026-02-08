@@ -93,9 +93,15 @@
         .bg-eats.fallback { background: linear-gradient(135deg, #e53935, #ef5350); }
         .bg-pass.fallback { background: linear-gradient(135deg, #546e7a, #78909c); }
         .bg-meme.fallback { background: linear-gradient(135deg, #8e24aa, #ba68c8); }
+        .bg-sire.fallback { background: linear-gradient(135deg, #1a73e8, #4285f4); }
 
         .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
         .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
+        /* 출시 예정 뱃지 스타일 */
+        .coming-soon { 
+            font-size: 0.7rem; color: var(--primary); border: 1px solid var(--primary); 
+            padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle;
+        }
 
         /* 하단 Support 섹션 - 와이드 & 컴팩트 */
         .support-container { padding: 40px 24px 60px; background-color: var(--bg-gray); }
@@ -187,6 +193,16 @@
                 <i class="material-icons-round">auto_awesome</i>
             </div>
             <div class="app-info"><h3>AIMEME</h3><p>AI Creative Tool</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.sire" class="app-card" target="_blank">
+            <div class="icon-box" id="box-sire">
+                <img src="/images/sire.png" alt="SiRE" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-sire').classList.add('bg-sire', 'fallback');">
+                <i class="material-icons-round">domain</i>
+            </div>
+            <div class="app-info">
+                <h3>SiRE<span class="coming-soon">Coming Soon</span></h3>
+                <p>Real Estate & Rent Manager</p>
+            </div>
         </a>
     </div>
 </div>
