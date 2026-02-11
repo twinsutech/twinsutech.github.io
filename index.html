@@ -27,26 +27,27 @@
             line-height: 1.4;
         }
         
-        /* 상단 섹션 - 아이콘 및 배너 스타일 수정 */
+        /* 상단 섹션 */
         header { 
             padding: 60px 24px 40px; 
             text-align: center; 
             background: #ffffff;
         }
 
-        /* 배너 이미지 스타일 수정: 크기 키움 및 하단 여백 추가 */
+        /* 배너 이미지 스타일 */
         .brand-banner {
             width: 100%;
-            max-width: 900px; /* 기존 500px에서 900px로 증가시켜 크기를 키움 */
+            max-width: 900px;
             height: auto;
-            margin-bottom: 30px; /* 아이콘과의 간격을 위해 하단 여백 추가 */
+            /* 헤더 본문과 하단 컨텐츠 사이의 간격 */
+            margin-bottom: 30px; 
         }
 
-        /* 아이콘 스타일 수정: 상단 여백 제거 (배너가 위에 오므로) */
+        /* 아이콘 스타일 수정: 크기 축소 및 배너와의 간격 추가 */
         .main-logo {
-            width: 120px; 
+            width: 80px; /* 기존 120px에서 80px로 축소 */
             height: auto;
-            /* margin-bottom: 15px; 제거함 */
+            margin-bottom: 25px; /* 하단 배너와의 간격 추가 */
         }
 
 
@@ -142,8 +143,8 @@
 <body>
 
 <header>
-    <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
     <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
+    <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
 </header>
 
 <div class="container">
