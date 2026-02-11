@@ -27,22 +27,35 @@
             line-height: 1.4;
         }
         
-        /* 상단 섹션 - 아이콘 배치 수정 */
+        /* 상단 섹션 수정 - 아이콘 왼쪽 구석 배치 */
         header { 
-            padding: 60px 24px 40px; 
+            padding: 40px 40px 20px; /* 여백 조정 */
             text-align: center; 
             background: #ffffff;
+            position: relative;
         }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
         .main-logo {
-            width: 120px; /* 로고 크기 조정 */
+            width: 60px; /* 구석 배치용으로 크기 최적화 */
             height: auto;
-            margin-bottom: 15px;
+            transition: transform 0.3s ease;
         }
+        
+        .main-logo:hover {
+            transform: scale(1.05);
+        }
+
         .brand { 
             font-size: 4.5rem; 
             font-weight: 700; 
             color: var(--primary); 
-            margin: 0; 
+            margin: 20px 0 0; 
             letter-spacing: -2.5px; 
         }
         .tagline { 
@@ -52,7 +65,7 @@
             font-weight: 300;
         }
 
-        /* 전체 가로폭 최대치 (와이드) */
+        /* 전체 가로폭 최대치 */
         .container { 
             max-width: 1400px; 
             margin: 0 auto; 
@@ -66,7 +79,7 @@
             width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
         }
 
-        /* 제품 그리드 - 한 줄에 무조건 3개 고정 (1280px 이상에서) */
+        /* 제품 그리드 */
         .app-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -86,12 +99,10 @@
             justify-content: center; margin-right: 18px; flex-shrink: 0; overflow: hidden;
             background: transparent;
         }
-        .icon-box img { 
-            width: 100%; height: 100%; object-fit: contain; 
-        }
+        .icon-box img { width: 100%; height: 100%; object-fit: contain; }
         .icon-box i { font-size: 36px; color: #fff; display: none; }
         
-        /* 이미지 로드 실패시에만 나타날 예비 배경색들 */
+        /* 제품 아이콘 폴백 배경 */
         .bg-note.fallback { background: linear-gradient(135deg, #689f38, #8bc34a); }
         .bg-insta.fallback { background: linear-gradient(135deg, #039be5, #4fc3f7); }
         .bg-money.fallback { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
@@ -102,10 +113,7 @@
 
         .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
         .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
-        .coming-soon { 
-            font-size: 0.7rem; color: var(--primary); border: 1px solid var(--primary); 
-            padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle;
-        }
+        .coming-soon { font-size: 0.7rem; color: var(--primary); border: 1px solid var(--primary); padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
 
         /* 하단 Support 섹션 */
         .support-container { padding: 40px 24px 60px; background-color: var(--bg-gray); }
@@ -131,12 +139,13 @@
         .f-links a:hover { color: var(--primary); }
         .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
 
-        /* 태블릿/모바일 대응 */
+        /* 반응형 대응 */
         @media (max-width: 1024px) {
             .app-grid { grid-template-columns: repeat(2, 1fr); }
             .brand { font-size: 3.5rem; }
         }
         @media (max-width: 640px) {
+            .logo-container { position: static; margin-bottom: 10px; } /* 모바일에선 다시 중앙으로 */
             .app-grid { grid-template-columns: 1fr; }
             .brand { font-size: 2.8rem; }
             .f-links a { display: block; margin: 15px 0; }
@@ -146,7 +155,9 @@
 <body>
 
 <header>
-    <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
+    <div class="logo-container">
+        <a href="#"><img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo"></a>
+    </div>
     <h1 class="brand">TWINSU Tech</h1>
     <p class="tagline">Simplifying Digital Life through Innovation</p>
 </header>
