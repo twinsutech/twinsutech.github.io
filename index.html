@@ -34,11 +34,11 @@
             background: #ffffff;
         }
 
-        /* 로고 컨테이너: 로고를 왼쪽으로 정렬 */
+        /* 로고 컨테이너: 중앙 정렬로 변경 */
         .logo-container {
-            text-align: left;
-            max-width: 900px; /* 배너와 동일한 최대 너비 */
-            margin: 0 auto;   /* 중앙 정렬 */
+            text-align: center; /* 왼쪽(left)에서 중앙(center)으로 변경 */
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         /* 배너 이미지 스타일 */
@@ -46,15 +46,14 @@
             width: 100%;
             max-width: 900px;
             height: auto;
-            /* 헤더 본문과 하단 컨텐츠 사이의 간격 */
             margin-bottom: 30px; 
         }
 
-        /* 아이콘 스타일 수정: 크기 축소 및 배너와의 간격 추가 */
+        /* 아이콘 스타일 */
         .main-logo {
-            width: 80px; /* 기존 120px에서 80px로 축소 */
+            width: 80px; 
             height: auto;
-            margin-bottom: 10px; /* 하단 배너와의 간격 추가 */
+            margin-bottom: 10px;
         }
 
 
@@ -72,7 +71,7 @@
             width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
         }
 
-        /* 제품 그리드 - 한 줄에 무조건 3개 고정 (1280px 이상에서) */
+        /* 제품 그리드 */
         .app-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
