@@ -34,6 +34,13 @@
             background: #ffffff;
         }
 
+        /* 로고 컨테이너: 로고를 왼쪽으로 정렬 */
+        .logo-container {
+            text-align: left;
+            max-width: 900px; /* 배너와 동일한 최대 너비 */
+            margin: 0 auto;   /* 중앙 정렬 */
+        }
+
         /* 배너 이미지 스타일 */
         .brand-banner {
             width: 100%;
@@ -47,7 +54,7 @@
         .main-logo {
             width: 80px; /* 기존 120px에서 80px로 축소 */
             height: auto;
-            margin-bottom: 25px; /* 하단 배너와의 간격 추가 */
+            margin-bottom: 10px; /* 하단 배너와의 간격 추가 */
         }
 
 
@@ -143,7 +150,9 @@
 <body>
 
 <header>
-    <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
+    <div class="logo-container">
+        <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
+    </div>
     <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
 </header>
 
