@@ -27,32 +27,26 @@
             line-height: 1.4;
         }
         
-        /* 상단 섹션 - 중앙 배치로 원복 */
+        /* 상단 섹션 - 아이콘 배치 수정 및 배너 이미지 스타일 추가 */
         header { 
-            padding: 80px 24px 40px; 
+            padding: 60px 24px 40px; 
             text-align: center; 
             background: #ffffff;
         }
         .main-logo {
-            width: 120px; /* 로고 강조를 위해 다시 크기 키움 */
+            width: 120px; /* 로고 크기 조정 */
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .brand { 
-            font-size: 4.5rem; 
-            font-weight: 700; 
-            color: var(--primary); 
-            margin: 0; 
-            letter-spacing: -2.5px; 
-        }
-        .tagline { 
-            font-size: 1.4rem; 
-            color: var(--text-sub); 
-            margin-top: 10px; 
-            font-weight: 300;
+        /* 기존 brand, tagline 스타일 삭제하고 배너 이미지용 스타일 추가 */
+        .brand-banner {
+            width: 100%;
+            max-width: 500px; /* 배너 이미지 최대 너비 설정 (기존 텍스트와 비슷한 규모로) */
+            height: auto;
+            margin-top: 10px;
         }
 
-        /* 전체 가로폭 최대치 */
+        /* 전체 가로폭 최대치 (와이드) */
         .container { 
             max-width: 1400px; 
             margin: 0 auto; 
@@ -66,7 +60,7 @@
             width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
         }
 
-        /* 제품 그리드 */
+        /* 제품 그리드 - 한 줄에 무조건 3개 고정 (1280px 이상에서) */
         .app-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -91,7 +85,7 @@
         }
         .icon-box i { font-size: 36px; color: #fff; display: none; }
         
-        /* 제품 아이콘 폴백 */
+        /* 이미지 로드 실패시에만 나타날 예비 배경색들 */
         .bg-note.fallback { background: linear-gradient(135deg, #689f38, #8bc34a); }
         .bg-insta.fallback { background: linear-gradient(135deg, #039be5, #4fc3f7); }
         .bg-money.fallback { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
@@ -131,14 +125,14 @@
         .f-links a:hover { color: var(--primary); }
         .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
 
-        /* 반응형 */
+        /* 태블릿/모바일 대응 */
         @media (max-width: 1024px) {
             .app-grid { grid-template-columns: repeat(2, 1fr); }
-            .brand { font-size: 3.5rem; }
+            /* .brand { font-size: 3.5rem; } - 삭제됨 */
         }
         @media (max-width: 640px) {
             .app-grid { grid-template-columns: 1fr; }
-            .brand { font-size: 2.8rem; }
+            /* .brand { font-size: 2.8rem; } - 삭제됨 */
             .f-links a { display: block; margin: 15px 0; }
         }
     </style>
@@ -147,8 +141,7 @@
 
 <header>
     <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
-    <h1 class="brand">TWINSU Tech</h1>
-    <p class="tagline">Simplifying Digital Life through Innovation</p>
+    <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
 </header>
 
 <div class="container">
