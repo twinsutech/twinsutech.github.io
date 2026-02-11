@@ -27,24 +27,28 @@
             line-height: 1.4;
         }
         
-        /* 상단 섹션 - 아이콘 배치 수정 및 배너 이미지 스타일 추가 */
+        /* 상단 섹션 - 아이콘 및 배너 스타일 수정 */
         header { 
             padding: 60px 24px 40px; 
             text-align: center; 
             background: #ffffff;
         }
-        .main-logo {
-            width: 120px; /* 로고 크기 조정 */
-            height: auto;
-            margin-bottom: 15px;
-        }
-        /* 기존 brand, tagline 스타일 삭제하고 배너 이미지용 스타일 추가 */
+
+        /* 배너 이미지 스타일 수정: 크기 키움 및 하단 여백 추가 */
         .brand-banner {
             width: 100%;
-            max-width: 500px; /* 배너 이미지 최대 너비 설정 (기존 텍스트와 비슷한 규모로) */
+            max-width: 900px; /* 기존 500px에서 900px로 증가시켜 크기를 키움 */
             height: auto;
-            margin-top: 10px;
+            margin-bottom: 30px; /* 아이콘과의 간격을 위해 하단 여백 추가 */
         }
+
+        /* 아이콘 스타일 수정: 상단 여백 제거 (배너가 위에 오므로) */
+        .main-logo {
+            width: 120px; 
+            height: auto;
+            /* margin-bottom: 15px; 제거함 */
+        }
+
 
         /* 전체 가로폭 최대치 (와이드) */
         .container { 
@@ -128,11 +132,9 @@
         /* 태블릿/모바일 대응 */
         @media (max-width: 1024px) {
             .app-grid { grid-template-columns: repeat(2, 1fr); }
-            /* .brand { font-size: 3.5rem; } - 삭제됨 */
         }
         @media (max-width: 640px) {
             .app-grid { grid-template-columns: 1fr; }
-            /* .brand { font-size: 2.8rem; } - 삭제됨 */
             .f-links a { display: block; margin: 15px 0; }
         }
     </style>
@@ -140,8 +142,8 @@
 <body>
 
 <header>
-    <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
     <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
+    <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
 </header>
 
 <div class="container">
