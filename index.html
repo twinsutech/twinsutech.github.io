@@ -119,13 +119,23 @@
             border: 1px solid #e8eaed; background-color: #ffffff; text-align: center;
         }
         .support-text { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 25px; }
-        .refund-policy { margin-top: 15px; padding: 15px; background-color: #f1f3f4; border-radius: 12px; font-size: 0.95rem; color: #3c4043; text-align: left; display: inline-block; max-width: 800px; }
+
+        /* 📍 Refund Policy UI 개선 */
+        .refund-policy { 
+            margin-top: 15px; padding: 25px; background-color: #f8f9fa; border-radius: 16px; 
+            font-size: 0.9rem; color: #3c4043; text-align: left; display: inline-block; 
+            max-width: 850px; border: 1px solid #e8eaed; 
+        }
+        .refund-policy h4 { margin: 0 0 10px 0; color: var(--text-main); font-size: 1.1rem; }
+        .refund-policy ul { margin: 0; padding-left: 20px; }
+        .refund-policy li { margin-bottom: 8px; line-height: 1.5; }
+        .policy-tag { font-weight: 700; color: var(--primary); }
         
         .contact-btn {
             display: inline-flex; align-items: center; padding: 12px 36px; border-radius: 12px;
             background-color: var(--primary); color: #ffffff;
             text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: 0.3s;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         .contact-btn:hover { background-color: #1557b0; }
 
@@ -143,6 +153,7 @@
         @media (max-width: 640px) {
             .app-grid { grid-template-columns: 1fr; }
             .f-links a { display: block; margin: 15px 0; }
+            .refund-policy { padding: 15px; }
         }
     </style>
 </head>
@@ -223,9 +234,17 @@
             We prioritize user security and seamless experiences. <br>
             Building high-quality tools that empower your productivity.
         </p>
+        
         <div class="refund-policy">
-            <strong>Refund Policy:</strong> Requests for refunds for paid applications are accepted within <strong>7 days</strong> of the purchase date. To process your request, please provide your valid Google Play Order ID (GPA.XXXX-XXXX-XXXX-XXXXX) via email.
+            <h4>[SiRE Pro Payment & Refund Policy]</h4>
+            <p>Full refunds are available within <strong>7 days</strong> of purchase. Please follow the instructions below based on the time elapsed:</p>
+            <ul>
+                <li><span class="policy-tag">Within 48 Hours:</span> Instant refund via Google Play. (Google Play App > Profile > Payments & subscriptions > Budget & history > Select purchase > Refund)</li>
+                <li><span class="policy-tag">48 Hours to 7 Days:</span> Request via Developer. Please send your <strong>Google Account</strong> and <strong>Order ID (GPA.XXXX-...)</strong> through the email below.</li>
+                <li><span class="policy-tag">After 7 Days:</span> Non-refundable. We recommend fully testing the app with the provided <strong>3 free uses</strong> before making a purchase.</li>
+            </ul>
         </div>
+
         <div class="support-action">
             <a href="mailto:yskim10007@gmail.com" class="contact-btn">
                 <i class="material-icons-round" style="margin-right: 10px;">mail</i> Contact for Refund & Support
