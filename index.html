@@ -34,14 +34,12 @@
             background: #ffffff;
         }
 
-        /* 로고 컨테이너: 중앙 정렬 */
         .logo-container {
             text-align: center;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        /* 배너 이미지 스타일 */
         .brand-banner {
             width: 100%;
             max-width: 900px;
@@ -49,15 +47,12 @@
             margin-bottom: 30px; 
         }
 
-        /* 아이콘 스타일 수정: 원래 크기(120px)로 복원 */
         .main-logo {
-            width: 120px; /* 80px에서 120px로 변경 */
+            width: 120px; 
             height: auto;
-            margin-bottom: 15px; /* 간격도 조금 늘림 */
+            margin-bottom: 15px; 
         }
 
-
-        /* 전체 가로폭 최대치 (와이드) */
         .container { 
             max-width: 1400px; 
             margin: 0 auto; 
@@ -71,7 +66,6 @@
             width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
         }
 
-        /* 제품 그리드 - 한 줄에 무조건 3개 고정 (1280px 이상에서) */
         .app-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -96,7 +90,6 @@
         }
         .icon-box i { font-size: 36px; color: #fff; display: none; }
         
-        /* 이미지 로드 실패시에만 나타날 예비 배경색들 */
         .bg-note.fallback { background: linear-gradient(135deg, #689f38, #8bc34a); }
         .bg-insta.fallback { background: linear-gradient(135deg, #039be5, #4fc3f7); }
         .bg-money.fallback { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
@@ -120,16 +113,53 @@
         }
         .support-text { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 25px; }
 
-        /* 📍 Refund Policy UI: 특정 앱 이름 제외하고 범용적으로 수정 */
-        .refund-policy { 
-            margin-top: 15px; padding: 25px; background-color: #f8f9fa; border-radius: 16px; 
-            font-size: 0.9rem; color: #3c4043; text-align: left; display: inline-block; 
-            max-width: 850px; border: 1px solid #e8eaed; 
+        /* 📍 동적 환불 정책 아코디언 스타일 수정 */
+        .refund-accordion {
+            max-width: 850px;
+            margin: 15px auto;
+            text-align: left;
+            border: 1px solid #e8eaed;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            transition: 0.3s;
         }
-        .refund-policy h4 { margin: 0 0 10px 0; color: var(--text-main); font-size: 1.1rem; }
-        .refund-policy ul { margin: 0; padding-left: 20px; }
-        .refund-policy li { margin-bottom: 8px; line-height: 1.5; }
-        .policy-tag { font-weight: 700; color: var(--primary); }
+        
+        /* 아코디언 헤더 (빨간색 박스 클릭 영역) */
+        .accordion-header {
+            padding: 20px 25px;
+            background-color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+        .accordion-header:hover { background-color: #f1f3f4; }
+        .accordion-header h4 { margin: 0; color: var(--text-main); font-size: 1.1rem; font-weight: 700; }
+        .accordion-icon { color: var(--primary); transition: transform 0.3s ease; }
+
+        /* 아코디언 상세 내용 (펼쳐지는 부분) */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+            background-color: #f8f9fa;
+        }
+        
+        /* 활성화 상태 스타일 */
+        .refund-accordion.active .accordion-content {
+            max-height: 500px; /* 넉넉한 높이 설정 */
+            padding: 0 25px 25px 25px;
+            border-top: 1px solid #e8eaed;
+        }
+        .refund-accordion.active .accordion-icon { transform: rotate(180deg); }
+
+        .accordion-content p { font-size: 0.95rem; color: #3c4043; margin: 20px 0 15px 0; }
+        .accordion-content ul { margin: 0; padding-left: 20px; }
+        .accordion-content li { margin-bottom: 12px; line-height: 1.6; font-size: 0.9rem; color: #3c4043; }
+        .policy-tag { font-weight: 700; color: var(--primary); display: block; margin-bottom: 2px; }
         
         .contact-btn {
             display: inline-flex; align-items: center; padding: 12px 36px; border-radius: 12px;
@@ -139,21 +169,18 @@
         }
         .contact-btn:hover { background-color: #1557b0; }
 
-        /* Footer */
         footer { padding: 60px 24px; background-color: #1a1b1e; color: #9aa0a6; text-align: center; }
         .f-links { margin-bottom: 25px; }
         .f-links a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 500; }
         .f-links a:hover { color: var(--primary); }
         .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
 
-        /* 태블릿/모바일 대응 */
         @media (max-width: 1024px) {
             .app-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 640px) {
             .app-grid { grid-template-columns: 1fr; }
             .f-links a { display: block; margin: 15px 0; }
-            .refund-policy { padding: 15px; }
         }
     </style>
 </head>
@@ -235,16 +262,29 @@
             Building high-quality tools that empower your productivity.
         </p>
         
-        <div class="refund-policy">
-            <h4>[Payment & Refund Policy]</h4>
-            <p>Full refunds for paid applications or in-app purchases are available within <strong>7 days</strong> of the purchase date. Please follow the instructions below:</p>
-            <ul>
-                <li><span class="policy-tag">Within 48 Hours:</span> Instant refund via Google Play. (Google Play App > Profile > Payments & subscriptions > Budget & history > Select purchase > Refund)</li>
-                <li><span class="policy-tag">48 Hours to 7 Days:</span> Request via Developer. Please send your <strong>Google Account</strong> and <strong>Order ID (GPA.XXXX-...)</strong> through the email below.</li>
-                <li><span class="policy-tag">After 7 Days:</span> Non-refundable. For apps with free trial features, we recommend fully testing the service before making a purchase.</li>
-            </ul>
+        <div class="refund-accordion" id="refundAccordion">
+            <div class="accordion-header" onclick="toggleAccordion()">
+                <h4>[Payment & Refund Policy]</h4>
+                <i class="material-icons-round accordion-icon">expand_more</i>
+            </div>
+            <div class="accordion-content">
+                <p>Full refunds for paid applications or in-app purchases are available within <strong>7 days</strong> of the purchase date. Please follow the instructions below:</p>
+                <ul>
+                    <li>
+                        <span class="policy-tag">Within 48 Hours:</span>
+                        Instant refund via Google Play. (Google Play App > Profile > Payments & subscriptions > Budget & history > Select purchase > Refund)
+                    </li>
+                    <li>
+                        <span class="policy-tag">48 Hours to 7 Days:</span>
+                        Request via Developer. Please send your <strong>Google Account</strong> and <strong>Order ID (GPA.XXXX-...)</strong> through the email below.
+                    </li>
+                    <li>
+                        <span class="policy-tag">After 7 Days:</span>
+                        Non-refundable. For apps with free trial features, we recommend fully testing the service before making a purchase.
+                    </li>
+                </ul>
+            </div>
         </div>
-
         <div class="support-action">
             <a href="mailto:yskim10007@gmail.com" class="contact-btn">
                 <i class="material-icons-round" style="margin-right: 10px;">mail</i> Contact for Refund & Support
@@ -263,6 +303,13 @@
         Verified Developer Website for Google Play Store.
     </div>
 </footer>
+
+<script type="text/javascript">
+    function toggleAccordion() {
+        const accordion = document.getElementById('refundAccordion');
+        accordion.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
