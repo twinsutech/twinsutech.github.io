@@ -101,17 +101,18 @@
         .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
         .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
         
-        /* 📍 배지 스타일 수정 (Coming Soon -> New) */
+        /* 📍 NEW 배지: 시선을 끄는 빨간색 배지 */
         .badge-new { 
-            font-size: 0.7rem; color: #ffffff; background-color: var(--success); 
+            font-size: 0.7rem; color: #ffffff; background-color: #d93025; 
             padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle;
-            font-weight: 700; display: inline-block; animation: pulse 2s infinite;
+            font-weight: 700; display: inline-block; animation: pulse-red 2s infinite;
+            box-shadow: 0 2px 4px rgba(217, 48, 37, 0.3);
         }
 
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
+        @keyframes pulse-red {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
 
         /* 하단 Support 섹션 */
