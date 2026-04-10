@@ -1,335 +1,335 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWINSU Tech. | Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --success: #01875f;
-            --text-main: #202124;
-            --text-sub: #5f6368;
-            --bg-gray: #f8f9fa;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWINSU Tech. | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --success: #01875f;
+            --text-main: #202124;
+            --text-sub: #5f6368;
+            --bg-gray: #f8f9fa;
+        }
 
-        /* 스크롤바 숨기기 */
-        body { -ms-overflow-style: none; scrollbar-width: none; overflow-y: scroll; }
-        body::-webkit-scrollbar { display: none; }
+        /* 스크롤바 숨기기 */
+        body { -ms-overflow-style: none; scrollbar-width: none; overflow-y: scroll; }
+        body::-webkit-scrollbar { display: none; }
 
-        body { 
-            margin: 0; 
-            font-family: 'Google Sans', 'Noto Sans KR', sans-serif; 
-            background-color: #ffffff; 
-            color: var(--text-main); 
-            line-height: 1.4;
-        }
-        
-        /* 상단 섹션 */
-        header { 
-            padding: 60px 24px 40px; 
-            text-align: center; 
-            background: #ffffff;
-        }
+        body { 
+            margin: 0; 
+            font-family: 'Google Sans', 'Noto Sans KR', sans-serif; 
+            background-color: #ffffff; 
+            color: var(--text-main); 
+            line-height: 1.4;
+        }
+        
+        /* 상단 섹션 */
+        header { 
+            padding: 60px 24px 40px; 
+            text-align: center; 
+            background: #ffffff;
+        }
 
-        .logo-container {
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+        .logo-container {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-        .brand-banner {
-            width: 100%;
-            max-width: 900px;
-            height: auto;
-            margin-bottom: 30px; 
-        }
+        .brand-banner {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            margin-bottom: 30px; 
+        }
 
-        .main-logo {
-            width: 120px; 
-            height: auto;
-            margin-bottom: 15px; 
-        }
+        .main-logo {
+            width: 120px; 
+            height: auto;
+            margin-bottom: 15px; 
+        }
 
-        .container { 
-            max-width: 1400px; 
-            margin: 0 auto; 
-            padding: 20px 24px; 
-        }
-        
-        .section-header { margin-bottom: 30px; text-align: center; }
-        .section-title { font-size: 2rem; font-weight: 500; position: relative; display: inline-block; padding-bottom: 10px; }
-        .section-title::after { 
-            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); 
-            width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
-        }
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 20px 24px; 
+        }
+        
+        .section-header { margin-bottom: 30px; text-align: center; }
+        .section-title { font-size: 2rem; font-weight: 500; position: relative; display: inline-block; padding-bottom: 10px; }
+        .section-title::after { 
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); 
+            width: 60px; height: 4px; background: var(--success); border-radius: 10px; 
+        }
 
-        .app-grid { 
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
-            gap: 24px; 
-            margin-bottom: 60px; 
-        }
+        .app-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 24px; 
+            margin-bottom: 60px; 
+        }
 
-        .app-card { 
-            background: #fff; border-radius: 20px; padding: 25px; text-decoration: none; 
-            border: 1px solid #e8eaed; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            display: flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        }
-        .app-card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+        .app-card { 
+            background: #fff; border-radius: 20px; padding: 25px; text-decoration: none; 
+            border: 1px solid #e8eaed; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .app-card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
 
-        .icon-box { 
-            width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center; 
-            justify-content: center; margin-right: 18px; flex-shrink: 0; overflow: hidden;
-            background: transparent;
-        }
-        .icon-box img { 
-            width: 100%; height: 100%; object-fit: contain; 
-        }
-        .icon-box i { font-size: 36px; color: #fff; display: none; }
-        
-        .bg-note.fallback { background: linear-gradient(135deg, #689f38, #8bc34a); }
-        .bg-insta.fallback { background: linear-gradient(135deg, #039be5, #4fc3f7); }
-        .bg-money.fallback { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
-        .bg-eats.fallback { background: linear-gradient(135deg, #e53935, #ef5350); }
-        .bg-pass.fallback { background: linear-gradient(135deg, #546e7a, #78909c); }
-        .bg-meme.fallback { background: linear-gradient(135deg, #8e24aa, #ba68c8); }
-        .bg-sire.fallback { background: linear-gradient(135deg, #1a73e8, #4285f4); }
-        .bg-calvi.fallback { background: linear-gradient(135deg, #4caf50, #81c784); }
+        .icon-box { 
+            width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center; 
+            justify-content: center; margin-right: 18px; flex-shrink: 0; overflow: hidden;
+            background: transparent;
+        }
+        .icon-box img { 
+            width: 100%; height: 100%; object-fit: contain; 
+        }
+        .icon-box i { font-size: 36px; color: #fff; display: none; }
+        
+        .bg-note.fallback { background: linear-gradient(135deg, #689f38, #8bc34a); }
+        .bg-insta.fallback { background: linear-gradient(135deg, #039be5, #4fc3f7); }
+        .bg-money.fallback { background: linear-gradient(135deg, #fb8c00, #ffb74d); }
+        .bg-eats.fallback { background: linear-gradient(135deg, #e53935, #ef5350); }
+        .bg-pass.fallback { background: linear-gradient(135deg, #546e7a, #78909c); }
+        .bg-meme.fallback { background: linear-gradient(135deg, #8e24aa, #ba68c8); }
+        .bg-sire.fallback { background: linear-gradient(135deg, #1a73e8, #4285f4); }
+        .bg-calvi.fallback { background: linear-gradient(135deg, #4caf50, #81c784); }
 
-        .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
-        .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
-        
-        /* 📍 NEW 배지: 시선을 끄는 빨간색 배지 */
-        .badge-new { 
-            font-size: 0.7rem; color: #ffffff; background-color: #d93025; 
-            padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle;
-            font-weight: 700; display: inline-block; animation: pulse-red 2s infinite;
-            box-shadow: 0 2px 4px rgba(217, 48, 37, 0.3);
-        }
+        .app-info h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
+        .app-info p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-sub); }
+        
+        /* 📍 NEW 배지: 시선을 끄는 빨간색 배지 */
+        .badge-new { 
+            font-size: 0.7rem; color: #ffffff; background-color: #d93025; 
+            padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle;
+            font-weight: 700; display: inline-block; animation: pulse-red 2s infinite;
+            box-shadow: 0 2px 4px rgba(217, 48, 37, 0.3);
+        }
 
-        @keyframes pulse-red {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+        @keyframes pulse-red {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
 
-        /* 하단 Support 섹션 */
-        .support-container { padding: 40px 24px 60px; background-color: var(--bg-gray); }
-        .support-box { 
-            max-width: 1350px; margin: 0 auto; padding: 40px; border-radius: 28px; 
-            border: 1px solid #e8eaed; background-color: #ffffff; text-align: center;
-        }
-        .support-text { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 25px; }
+        /* 하단 Support 섹션 */
+        .support-container { padding: 40px 24px 60px; background-color: var(--bg-gray); }
+        .support-box { 
+            max-width: 1350px; margin: 0 auto; padding: 40px; border-radius: 28px; 
+            border: 1px solid #e8eaed; background-color: #ffffff; text-align: center;
+        }
+        .support-text { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 25px; }
 
-        /* 📍 동적 환불 정책 아코디언 스타일 수정 */
-        .refund-accordion {
-            max-width: 850px;
-            margin: 15px auto;
-            text-align: left;
-            border: 1px solid #e8eaed;
-            border-radius: 16px;
-            overflow: hidden;
-            background-color: #f8f9fa;
-            transition: 0.3s;
-        }
-        
-        /* 아코디언 헤더 (빨간색 박스 클릭 영역) */
-        .accordion-header {
-            padding: 20px 25px;
-            background-color: #ffffff;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            user-select: none;
-            transition: background-color 0.2s;
-        }
-        .accordion-header:hover { background-color: #f1f3f4; }
-        .accordion-header h4 { margin: 0; color: var(--text-main); font-size: 1.1rem; font-weight: 700; }
-        .accordion-icon { color: var(--primary); transition: transform 0.3s ease; }
+        /* 📍 동적 환불 정책 아코디언 스타일 수정 */
+        .refund-accordion {
+            max-width: 850px;
+            margin: 15px auto;
+            text-align: left;
+            border: 1px solid #e8eaed;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            transition: 0.3s;
+        }
+        
+        /* 아코디언 헤더 (빨간색 박스 클릭 영역) */
+        .accordion-header {
+            padding: 20px 25px;
+            background-color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+        .accordion-header:hover { background-color: #f1f3f4; }
+        .accordion-header h4 { margin: 0; color: var(--text-main); font-size: 1.1rem; font-weight: 700; }
+        .accordion-icon { color: var(--primary); transition: transform 0.3s ease; }
 
-        /* 아코디언 상세 내용 (펼쳐지는 부분) */
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
-            background-color: #f8f9fa;
-        }
-        
-        /* 활성화 상태 스타일 */
-        .refund-accordion.active .accordion-content {
-            max-height: 500px; /* 넉넉한 높이 설정 */
-            padding: 0 25px 25px 25px;
-            border-top: 1px solid #e8eaed;
-        }
-        .refund-accordion.active .accordion-icon { transform: rotate(180deg); }
+        /* 아코디언 상세 내용 (펼쳐지는 부분) */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+            background-color: #f8f9fa;
+        }
+        
+        /* 활성화 상태 스타일 */
+        .refund-accordion.active .accordion-content {
+            max-height: 500px; /* 넉넉한 높이 설정 */
+            padding: 0 25px 25px 25px;
+            border-top: 1px solid #e8eaed;
+        }
+        .refund-accordion.active .accordion-icon { transform: rotate(180deg); }
 
-        .accordion-content p { font-size: 0.95rem; color: #3c4043; margin: 20px 0 15px 0; }
-        .accordion-content ul { margin: 0; padding-left: 20px; }
-        .accordion-content li { margin-bottom: 12px; line-height: 1.6; font-size: 0.9rem; color: #3c4043; }
-        .policy-tag { font-weight: 700; color: var(--primary); display: block; margin-bottom: 2px; }
-        
-        .contact-btn {
-            display: inline-flex; align-items: center; padding: 12px 36px; border-radius: 12px;
-            background-color: var(--primary); color: #ffffff;
-            text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: 0.3s;
-            margin-top: 25px;
-        }
-        .contact-btn:hover { background-color: #1557b0; }
+        .accordion-content p { font-size: 0.95rem; color: #3c4043; margin: 20px 0 15px 0; }
+        .accordion-content ul { margin: 0; padding-left: 20px; }
+        .accordion-content li { margin-bottom: 12px; line-height: 1.6; font-size: 0.9rem; color: #3c4043; }
+        .policy-tag { font-weight: 700; color: var(--primary); display: block; margin-bottom: 2px; }
+        
+        .contact-btn {
+            display: inline-flex; align-items: center; padding: 12px 36px; border-radius: 12px;
+            background-color: var(--primary); color: #ffffff;
+            text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: 0.3s;
+            margin-top: 25px;
+        }
+        .contact-btn:hover { background-color: #1557b0; }
 
-        footer { padding: 60px 24px; background-color: #1a1b1e; color: #9aa0a6; text-align: center; }
-        .f-links { margin-bottom: 25px; }
-        .f-links a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 500; }
-        .f-links a:hover { color: var(--primary); }
-        .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
+        footer { padding: 60px 24px; background-color: #1a1b1e; color: #9aa0a6; text-align: center; }
+        .f-links { margin-bottom: 25px; }
+        .f-links a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 500; }
+        .f-links a:hover { color: var(--primary); }
+        .copyright { font-size: 0.85rem; opacity: 0.5; line-height: 2; }
 
-        @media (max-width: 1024px) {
-            .app-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 640px) {
-            .app-grid { grid-template-columns: 1fr; }
-            .f-links a { display: block; margin: 15px 0; }
-        }
-    </style>
+        @media (max-width: 1024px) {
+            .app-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .app-grid { grid-template-columns: 1fr; }
+            .f-links a { display: block; margin: 15px 0; }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-container">
-        <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
-    </div>
-    <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
+    <div class="logo-container">
+        <img src="./images/TWINSUTech-icon.png" alt="TWINSU Tech Icon" class="main-logo">
+    </div>
+    <img src="./images/TWINSUTech-banner.png" alt="TWINSU Tech Banner" class="brand-banner">
 </header>
 
 <div class="container">
-    <div class="section-header">
-        <h2 class="section-title">Our Solutions</h2>
-    </div>
-    
-    <div class="app-grid">
-        <a href="https://play.google.com/store/apps/details?id=com.obj.capturenote" class="app-card" target="_blank">
-            <div class="icon-box" id="box-note">
-                <img src="./images/noteman.png" alt="NoteMan" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-note').classList.add('bg-note', 'fallback');">
-                <i class="material-icons-round">description</i>
-            </div>
-            <div class="app-info"><h3>NoteMan</h3><p>Smart Memo System</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.instanote" class="app-card" target="_blank">
-            <div class="icon-box" id="box-insta">
-                <img src="./images/instanote.png" alt="InstaNote" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-insta').classList.add('bg-insta', 'fallback');">
-                <i class="material-icons-round">edit_note</i>
-            </div>
-            <div class="app-info"><h3>InstaNote</h3><p>Secure Digital Pad</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.accountbook" class="app-card" target="_blank">
-            <div class="icon-box" id="box-money">
-                <img src="./images/moneytracker.png" alt="MoneyTracker" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-money').classList.add('bg-money', 'fallback');">
-                <i class="material-icons-round">payments</i>
-            </div>
-            <div class="app-info"><h3>MoneyTracker</h3><p>Finance Manager</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.neareats" class="app-card" target="_blank">
-            <div class="icon-box" id="box-eats">
-                <img src="./images/neareats.png" alt="NearEats" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-eats').classList.add('bg-eats', 'fallback');">
-                <i class="material-icons-round">restaurant</i>
-            </div>
-            <div class="app-info"><h3>NearEats</h3><p>Gourmet Finder</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.passwordbox" class="app-card" target="_blank">
-            <div class="icon-box" id="box-pass">
-                <img src="./images/passwordbox.png" alt="Password BOX" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-pass').classList.add('bg-pass', 'fallback');">
-                <i class="material-icons-round">lock</i>
-            </div>
-            <div class="app-info"><h3>Password BOX</h3><p>Encrypted Vault</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.memegenerator" class="app-card" target="_blank">
-            <div class="icon-box" id="box-meme">
-                <img src="./images/aimeme.png" alt="AIMEME" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-meme').classList.add('bg-meme', 'fallback');">
-                <i class="material-icons-round">auto_awesome</i>
-            </div>
-            <div class="app-info"><h3>AIMEME</h3><p>AI Creative Tool</p></div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.sire" class="app-card" target="_blank">
-            <div class="icon-box" id="box-sire">
-                <img src="./images/sire.png" alt="SiRE" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-sire').classList.add('bg-sire', 'fallback');">
-                <i class="material-icons-round">domain</i>
-            </div>
-            <div class="app-info">
-                <h3>SiRE<span class="badge-new">NEW</span></h3>
-                <p>Real Estate & Rent Manager</p>
-            </div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.obj.calvi" class="app-card" target="_blank">
-            <div class="icon-box" id="box-calvi">
-                <img src="./images/calvi.png" alt="Calvi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-calvi').classList.add('bg-calvi', 'fallback');">
-                <i class="material-icons-round">eco</i>
-            </div>
-            <div class="app-info">
-                <h3>Calvi<span class="badge-new">NEW</span></h3>
-                <p>AI Diet & Calories</p>
-            </div>
-        </a>
-    </div>
+    <div class="section-header">
+        <h2 class="section-title">Our Solutions</h2>
+    </div>
+    
+    <div class="app-grid">
+        <a href="https://play.google.com/store/apps/details?id=com.obj.capturenote" class="app-card" target="_blank">
+            <div class="icon-box" id="box-note">
+                <img src="./images/noteman.png" alt="NoteMan" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-note').classList.add('bg-note', 'fallback');">
+                <i class="material-icons-round">description</i>
+            </div>
+            <div class="app-info"><h3>NoteMan</h3><p>Smart Memo System</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.instanote" class="app-card" target="_blank">
+            <div class="icon-box" id="box-insta">
+                <img src="./images/instanote.png" alt="InstaNote" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-insta').classList.add('bg-insta', 'fallback');">
+                <i class="material-icons-round">edit_note</i>
+            </div>
+            <div class="app-info"><h3>InstaNote</h3><p>Secure Digital Pad</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.accountbook" class="app-card" target="_blank">
+            <div class="icon-box" id="box-money">
+                <img src="./images/moneytracker.png" alt="MoneyTracker" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-money').classList.add('bg-money', 'fallback');">
+                <i class="material-icons-round">payments</i>
+            </div>
+            <div class="app-info"><h3>MoneyTracker</h3><p>Finance Manager</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.neareats" class="app-card" target="_blank">
+            <div class="icon-box" id="box-eats">
+                <img src="./images/neareats.png" alt="NearEats" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-eats').classList.add('bg-eats', 'fallback');">
+                <i class="material-icons-round">restaurant</i>
+            </div>
+            <div class="app-info"><h3>NearEats</h3><p>Gourmet Finder</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.passwordbox" class="app-card" target="_blank">
+            <div class="icon-box" id="box-pass">
+                <img src="./images/passwordbox.png" alt="Password BOX" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-pass').classList.add('bg-pass', 'fallback');">
+                <i class="material-icons-round">lock</i>
+            </div>
+            <div class="app-info"><h3>Password BOX</h3><p>Encrypted Vault</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.memegenerator" class="app-card" target="_blank">
+            <div class="icon-box" id="box-meme">
+                <img src="./images/aimeme.png" alt="AIMEME" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-meme').classList.add('bg-meme', 'fallback');">
+                <i class="material-icons-round">auto_awesome</i>
+            </div>
+            <div class="app-info"><h3>AIMEME</h3><p>AI Creative Tool</p></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.sire" class="app-card" target="_blank">
+            <div class="icon-box" id="box-sire">
+                <img src="./images/sire.png" alt="SiRE" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-sire').classList.add('bg-sire', 'fallback');">
+                <i class="material-icons-round">domain</i>
+            </div>
+            <div class="app-info">
+                <h3>SiRE<span class="badge-new">NEW</span></h3>
+                <p>Real Estate & Rent Manager</p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.obj.calvi" class="app-card" target="_blank">
+            <div class="icon-box" id="box-calvi">
+                <img src="./images/calvi.png" alt="Calvi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; document.getElementById('box-calvi').classList.add('bg-calvi', 'fallback');">
+                <i class="material-icons-round">eco</i>
+            </div>
+            <div class="app-info">
+                <h3>Calvi<span class="badge-new">NEW</span></h3>
+                <p>AI Diet & Calories</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <div class="support-container">
-    <div class="support-box">
-        <h2 class="section-title" style="font-size: 1.8rem;">Support & Refund Policy</h2>
-        <p class="support-text">
-            We prioritize user security and seamless experiences. <br>
-            Building high-quality tools that empower your productivity.
-        </p>
-        
-        <div class="refund-accordion" id="refundAccordion">
-            <div class="accordion-header" onclick="toggleAccordion()">
-                <h4>[Payment & Refund Policy]</h4>
-                <i class="material-icons-round accordion-icon">expand_more</i>
-            </div>
-            <div class="accordion-content">
-                <p>Full refunds for paid applications or in-app purchases are available within <strong>7 days</strong> of the purchase date. Please follow the instructions below:</p>
-                <ul>
-                    <li>
-                        <span class="policy-tag">Within 48 Hours:</span>
-                        Instant refund via Google Play. (Google Play App > Profile > Payments & subscriptions > Budget & history > Select purchase > Refund)
-                    </li>
-                    <li>
-                        <span class="policy-tag">48 Hours to 7 Days:</span>
-                        Request via Developer. Please send your <strong>Google Account</strong> and <strong>Order ID (GPA.XXXX-...)</strong> through the email below.
-                    </li>
-                    <li>
-                        <span class="policy-tag">After 7 Days:</span>
-                        Non-refundable. For apps with free trial features, we recommend fully testing the service before making a purchase.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="support-action">
-            <a href="mailto:yskim10007@gmail.com" class="contact-btn">
-                <i class="material-icons-round" style="margin-right: 10px;">mail</i> Contact for Refund & Support
-            </a>
-        </div>
-    </div>
+    <div class="support-box">
+        <h2 class="section-title" style="font-size: 1.8rem;">Support & Refund Policy</h2>
+        <p class="support-text">
+            We prioritize user security and seamless experiences. <br>
+            Building high-quality tools that empower your productivity.
+        </p>
+        
+        <div class="refund-accordion" id="refundAccordion">
+            <div class="accordion-header" onclick="toggleAccordion()">
+                <h4>[Payment & Refund Policy]</h4>
+                <i class="material-icons-round accordion-icon">expand_more</i>
+            </div>
+            <div class="accordion-content">
+                <p>Full refunds for paid applications or in-app purchases are available within <strong>7 days</strong> of the purchase date. Please follow the instructions below:</p>
+                <ul>
+                    <li>
+                        <span class="policy-tag">Within 48 Hours:</span>
+                        Instant refund via Google Play. (Google Play App > Profile > Payments & subscriptions > Budget & history > Select purchase > Refund)
+                    </li>
+                    <li>
+                        <span class="policy-tag">48 Hours to 7 Days:</span>
+                        Request via Developer. Please send your <strong>Google Account</strong> and <strong>Order ID (GPA.XXXX-...)</strong> through the email below.
+                    </li>
+                    <li>
+                        <span class="policy-tag">After 7 Days:</span>
+                        Non-refundable. For apps with free trial features, we recommend fully testing the service before making a purchase.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-action">
+            <a href="mailto:yskim10007@gmail.com" class="contact-btn">
+                <i class="material-icons-round" style="margin-right: 10px;">mail</i> Contact for Refund & Support
+            </a>
+        </div>
+    </div>
 </div>
 
 <footer>
-    <div class="f-links">
-        <a href="https://play.google.com/store/apps/developer?id=TWINSU+Tech" target="_blank">Google Play Store</a>
-        <a href="twinsutech-privacy-policy.html" target="_blank">Privacy Policy</a>
-    </div>
-    <div class="copyright">
-        © 2026 TWINSU Tech All Rights Reserved. <br>
-        Verified Developer Website for Google Play Store.
-    </div>
+    <div class="f-links">
+        <a href="https://play.google.com/store/apps/developer?id=TWINSU+Tech" target="_blank">Google Play Store</a>
+        <a href="twinsutech-privacy-policy.html" target="_blank">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+        © 2026 TWINSU Tech All Rights Reserved. <br>
+        Verified Developer Website for Google Play Store.
+    </div>
 </footer>
 
 <script type="text/javascript">
-    function toggleAccordion() {
-        const accordion = document.getElementById('refundAccordion');
-        accordion.classList.toggle('active');
-    }
+    function toggleAccordion() {
+        const accordion = document.getElementById('refundAccordion');
+        accordion.classList.toggle('active');
+    }
 </script>
 
 </body>
